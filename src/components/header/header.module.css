@@ -1,0 +1,91 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+.logo {
+  width: 77px;
+}
+
+.desktopLinks {
+  display: none;
+}
+
+.header {
+  padding: 2rem;
+}
+
+.mobileMenu {
+  position: absolute;
+  background: white;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  top: 95.75px;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
+.mobileMenu a {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1b1d23;
+}
+
+.overlay {
+  position: fixed;
+  top: 95.75px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 499;
+}
+
+@media screen and (min-width: 668px) {
+  .header {
+    padding-left: 97px;
+    padding-right: 98px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .desktopLinks {
+    display: flex;
+    
+  }
+
+  .desktopLinks a {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #7d828f;
+    
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 78.84px;
+  }
+
+  .pLink {
+    margin-right: 61px;
+  }
+
+  .aboutLink {
+    margin-right: 51px;
+  }
+}

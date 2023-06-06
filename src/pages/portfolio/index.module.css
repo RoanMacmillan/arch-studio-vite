@@ -1,0 +1,14 @@
+.portfolio {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 56px;
+  margin-bottom: 109px;
+}
+
+@media screen and (min-width: 668px) {
+  .portfolio {
+    padding-left: 97px;
+    padding-right: 98px;
+    margin-bottom: 200px;
+  }
+}

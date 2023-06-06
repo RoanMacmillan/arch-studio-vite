@@ -1,0 +1,19 @@
+.navButton {
+  height: 72px;
+  width: 252px;
+  background: #1b1d23;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.arrow {
+  filter: invert(1);
+}

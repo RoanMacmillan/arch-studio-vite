@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Seraph",
+    "mobile": "/images/portfolio/mobile/image-seraph.jpg",
+    "tablet": "/images/portfolio/tablet/image-seraph.jpg",
+    "desktop": "/images/portfolio/desktop/image-seraph.jpg",
+    "title": "Seraph",
+    "description": "July 2020"
+  },
+  {
+    "name": "EE Box",
+    "mobile": "/images/portfolio/mobile/image-eebox.jpg",
+    "tablet": "/images/portfolio/tablet/image-eebox.jpg",
+    "desktop": "/images/portfolio/desktop/image-eebox.jpg",
+    "title": "EE Box",
+    "description": "February 2022"
+  },
+  {
+    "name": "Federal",
+    "mobile": "/images/portfolio/mobile/image-federal.jpg",
+    "tablet": "/images/portfolio/tablet/image-federal.jpg",
+    "desktop": "/images/portfolio/desktop/image-federal.jpg",
+    "title": "Federal",
+    "description": "September 2023"
+  },
+  {
+    "name": "Project Del Sol",
+    "mobile": "/images/portfolio/mobile/image-del-sol.jpg",
+    "tablet": "/images/portfolio/tablet/image-del-sol.jpg",
+    "desktop": "/images/portfolio/desktop/image-del-sol.jpg",
+    "title": "Project Del Sol",
+    "description": "August 2019"
+  },
+  {
+    "name": "Le Prototype",
+    "mobile": "/images/portfolio/mobile/image-prototype.jpg",
+    "tablet": "/images/portfolio/tablet/image-prototype.jpg",
+    "desktop": "/images/portfolio/desktop/image-prototype.jpg",
+    "title": "Le Prototype",
+    "description": "November 2022"
+  },
+  {
+    "name": "228B Tower",
+    "mobile": "/images/portfolio/mobile/image-228b.jpg",
+    "tablet": "/images/portfolio/tablet/image-228b.jpg",
+    "desktop": "/images/portfolio/desktop/image-228b.jpg",
+    "title": "228B Tower",
+    "description": "April 2021"
+  },
+  {
+    "name": "Edelweiss",
+    "mobile": "/images/portfolio/mobile/image-edelweiss.jpg",
+    "tablet": "/images/portfolio/tablet/image-edelweiss.jpg",
+    "desktop": "/images/portfolio/desktop/image-edelweiss.jpg",
+    "title": "Edelweiss",
+    "description": "June 2020"
+  },
+  {
+    "name": "Netcry",
+    "mobile": "/images/portfolio/mobile/image-netcry.jpg",
+    "tablet": "/images/portfolio/tablet/image-netcry.jpg",
+    "desktop": "/images/portfolio/desktop/image-netcry.jpg",
+    "title": "Netcry",
+    "description": "December 2021"
+  },
+  {
+    "name": "Hypers",
+    "mobile": "/images/portfolio/mobile/image-hypers.jpg",
+    "tablet": "/images/portfolio/tablet/image-hypers.jpg",
+    "desktop": "/images/portfolio/desktop/image-hypers.jpg",
+    "title": "Hypers",
+    "description": "August 2019"
+  },
+  {
+    "name": "SXIV",
+    "mobile": "/images/portfolio/mobile/image-sxiv.jpg",
+    "tablet": "/images/portfolio/tablet/image-sxiv.jpg",
+    "desktop": "/images/portfolio/desktop/image-sxiv.jpg",
+    "title": "SXIV",
+    "description": "April 2022"
+  },
+  {
+    "name": "Trinity",
+    "mobile": "/images/portfolio/mobile/image-trinity.jpg",
+    "tablet": "/images/portfolio/tablet/image-trinity.jpg",
+    "desktop": "/images/portfolio/desktop/image-trinity.jpg",
+    "title": "Trinity",
+    "description": "November 2021"
+  },
+  {
+    "name": "Paramour",
+    "mobile": "/images/portfolio/mobile/image-paramour.jpg",
+    "tablet": "/images/portfolio/tablet/image-paramour.jpg",
+    "desktop": "/images/portfolio/desktop/image-paramour.jpg",
+    "title": "Paramour",
+    "description": "May 2023"
+  }
+]

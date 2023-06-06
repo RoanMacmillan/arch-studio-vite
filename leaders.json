@@ -1,0 +1,27 @@
+[
+    
+    {
+      "profile image": "/images/about/desktop/avatar-jake.jpg",
+      "name": "Jake Richards",
+      "role": "Chief Architect"
+    },
+
+    {
+      "profile image": "/images/about/desktop/avatar-thompson.jpg",
+      "name": "Thompson Smith",
+      "role": "Head of Finance"
+    },
+
+    {
+      "profile image": "/images/about/desktop/avatar-jackson.jpg",
+      "name": "Jackson Rourke",
+      "role": "Lead Designer"
+    },
+    {
+      "profile image": "/images/about/desktop/avatar-maria.jpg",
+      "name": "Maria Simpson",
+      "role": "Senior Architect"
+    }
+   
+  ]
+  

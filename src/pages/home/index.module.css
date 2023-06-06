@@ -1,0 +1,329 @@
+.heroWrapper {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.heroWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../public/images/home/mobile/image-hero-paramour.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(70%);
+  z-index: -1;
+}
+
+.heroWrapper h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.2px;
+  color: #ffffff;
+  margin-top: 116px;
+}
+
+.heroWrapper p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 11px;
+  margin-bottom: 83px;
+}
+
+.line {
+  width: 65px;
+  height: 1px;
+  background: #c8ccd8;
+}
+
+.textWrapper {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 81px;
+}
+
+.textWrapper h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -1.71429px;
+  color: #1b1d23;
+  margin-top: 69px;
+  margin-bottom: 22px;
+}
+
+.textWrapper p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #60636d;
+  margin-bottom: 2rem;
+}
+
+.aboutWrapper h1 {
+  margin-bottom: 23px;
+}
+
+.aboutWrapper::before {
+  background-image: url("../public/images/home/mobile/image-small-team.jpg");
+}
+
+.featuredContainer {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 132px;
+}
+
+.featuredContainer h1 {
+  margin-top: 73px;
+  margin-bottom: 43px;
+}
+
+.imageCard {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  padding-left: 1.5rem;
+  padding-bottom: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.imageCard h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.imageCard a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.card1::before {
+  background-image: url("../public/images/portfolio/mobile/image-del-sol.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(60%) saturate(150%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+}
+
+.card2::before {
+  background-image: url("../public/images/portfolio/tablet/image-228b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(60%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+  background-position: -120px;
+}
+
+.card3::before {
+  background-image: url("../public/images/portfolio/tablet/image-prototype.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(60%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  z-index: -1;
+  background-position: -120px;
+}
+
+br {
+  display: none;
+}
+
+.imageCard strong {
+  display: none;
+}
+
+.bgText {
+  display: none;
+}
+
+.featureBtn {
+  display: none !important;
+}
+
+.currentPage {
+  display: none;
+}
+
+@media screen and (min-width: 518px) {
+  .card2::before,
+  .card3::before {
+    background-position: unset;
+  }
+}
+
+@media screen and (min-width: 668px) {
+  .textWrapper {
+    padding-left: 98px;
+    padding-right: 98px;
+    margin-bottom: 233px;
+    position: relative;
+  }
+
+  .heroWrapper::before {
+  background-image: url("../public/images/home/tablet/image-hero-paramour.jpg");
+
+  }
+  .aboutWrapper::before {
+    background-image: url("../public/images/home/tablet/image-small-team.jpg");
+  }
+  
+  .heroContainer,
+  .featuredContainer {
+    padding-left: 97px;
+    padding-right: 98px;
+  }
+
+  .heroWrapper {
+    height: 720px;
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+
+  .heroWrapper h1 {
+    font-size: 96px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    margin-top: 186px;
+  }
+
+  .aboutWrapper h1 {
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -2px;
+  }
+
+  .aboutWrapper {
+    height: 560px;
+  }
+
+  .textWrapper h2 {
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-top: 248px;
+    margin-bottom: 43px;
+  }
+
+  br {
+    display: unset;
+  }
+
+  .featuredContainer h1 {
+    font-size: 72px;
+    line-height: 64px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: -2px;
+  }
+
+  .card1::before {
+    background-image: url("../public/images/portfolio/tablet/image-del-sol.jpg");
+  }
+
+  .imageCard strong {
+    display: unset;
+    position: absolute;
+    right: 16px;
+    top: 29px;
+    font-weight: 700;
+    font-size: 250px;
+    line-height: 200px;
+    text-align: right;
+    letter-spacing: -5px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  .bgText {
+    display: unset;
+    position: absolute;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 200px;
+    letter-spacing: 3px;
+    color: #eeeff4;
+    top: 89px;
+    /* outline: 1px solid red; */
+  }
+
+  .featureBtn {
+    display: flex !important;
+  }
+
+  .featureBtnWrapper {
+    display: flex;
+    margin-top: 207px;
+    margin-bottom: 86px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobileBtn {
+    display: none !important;
+  }
+
+  .currentPage {
+    display: unset;
+    position: absolute;
+    left: -6px;
+    top: 192px;
+    transform: rotate(90deg);
+    
+  }
+
+  .currentPage span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    color: #c8ccd8;
+  }
+
+  .currentPage .currentLine {
+    width: 104px;
+    height: 1px;
+    background: #c8ccd8;
+    position: absolute;
+    top: 10px;
+    right: 161px;
+    
+  }
+}

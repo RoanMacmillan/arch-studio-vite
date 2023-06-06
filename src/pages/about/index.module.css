@@ -1,0 +1,35 @@
+.aboutContent h2 {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -1.71429px;
+  color: #1b1d23;
+}
+
+.aboutContent p {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #60636d;
+}
+
+.aboutContent {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 145px;
+}
+
+.aboutContent h3 {
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -1.71429px;
+  color: #1b1d23;
+  margin-top: 112px;
+}

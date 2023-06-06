@@ -1,0 +1,28 @@
+.leadersContainer h4 {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1B1D23;
+    margin-top: 15px;
+    
+}
+
+.leadersChild {
+    margin-bottom: 79px;
+}
+
+.leadersImgWrapper {
+    /* max-width: 350px; */
+}
+
+.leadersImgWrapper img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.leadersContainer {
+    margin-bottom: 171px;
+    margin-top: 55px;
+}
