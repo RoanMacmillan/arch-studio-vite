@@ -26,3 +26,14 @@
     margin-bottom: 171px;
     margin-top: 55px;
 }
+
+
+@media screen and (min-width: 768px) {
+
+
+    .leadersContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px; /* adjust to your liking */
+      }
+}

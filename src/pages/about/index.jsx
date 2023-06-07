@@ -7,15 +7,17 @@ export default function page() {
   return (
     <div className={styles.about}>
       <AboutContactHero
-        heroImg="/images/about/mobile/image-hero.jpg"
+        heroImg="/images/about/desktop/image-hero.jpg"
         heading="Your team of professionals"
         paragraph="Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings."
       />
 
       <div className={styles.aboutContent}>
-        <h2>Our<br></br> Heritage</h2>
+        <div className={styles.middleContainer}>
+          <div className={styles.textLeft}>
+        <h2>Our<br></br> Heritage</h2> 
         <br></br>
-
+ 
         <p>
           Founded in 2007, we started as a trio of architects. Our complimentary
           skills and relentless attention to detail turned Arch into one of the
@@ -34,9 +36,11 @@ export default function page() {
           Our small team of world-class professionals provides input on every
           project.
         </p>
+        </div>
+        <div className={styles.imageRight}></div>
+        </div>
 
-        <h3>The<br></br> Leaders</h3>
-
+        <h3>The<br></br> Leaders</h3> 
         <Leaders />
       </div>
     </div>

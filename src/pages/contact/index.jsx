@@ -25,7 +25,7 @@ export default function page() {
   return (
     <div className={styles.contactContainer}>
       <AboutContactHero
-        heroImg="/images/contact/mobile/image-hero.jpg"
+        heroImg="/images/contact/desktop/image-hero.jpg"
         heading="Tell us about your project"
         paragraph="We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!"
       />

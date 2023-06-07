@@ -33,3 +33,50 @@
   color: #1b1d23;
   margin-top: 112px;
 }
+
+@media screen and (min-width: 568px) {
+  .aboutContent {
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .aboutContent {
+    max-width: 1305px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .textLeft {
+    /* outline: 1px solid red; */
+    width: 446px;
+    height: 558px;
+  }
+
+  .imageRight {
+    background-image: url("../../../public/images/about/desktop/image-heritage.jpg");
+    width: 540px;
+    height: 568px;
+  }
+
+  .middleContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .aboutContent h2 {
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -2px;
+    margin-top: 83px;
+    margin-bottom: 51px;
+  }
+
+  .aboutContent h3 {
+    font-size: 72px;
+    line-height: 64px;
+    letter-spacing: -2px;
+  }
+}

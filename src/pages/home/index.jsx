@@ -21,6 +21,7 @@ export default function Home() {
       </div>
 
       <div className={styles.textWrapper}>
+        <div className={styles.leftText}>
         <div className={styles.line}></div>
         <strong className={styles.bgText}>Welcome</strong>
         <h2>
@@ -45,6 +46,10 @@ export default function Home() {
           area to create truly stunning projects that will stand the test of
           time.
         </p>
+        </div>
+
+      <div className={styles.imageRight}></div>
+
       </div>
 
       <div className={styles.heroContainer}>
@@ -65,6 +70,8 @@ export default function Home() {
           </Button>
         </div>
 
+        <div className={styles.cardContainer}>
+
         <div className={`${styles.imageCard} ${styles.card1}`}>
           <h2>Project Del Sol</h2>
           <a>View all projects</a>
@@ -76,7 +83,7 @@ export default function Home() {
           <h2>228B Tower</h2>
           <a>View all projects</a>
 
-          <strong>2</strong>
+          <strong>2</strong> 
         </div>
 
         <div className={`${styles.imageCard} ${styles.card3}`}>
@@ -84,6 +91,8 @@ export default function Home() {
           <a>View all projects</a>
 
           <strong>3</strong>
+        </div>
+
         </div>
 
         <Button className={styles.mobileBtn} href="/portfolio" width="100%">

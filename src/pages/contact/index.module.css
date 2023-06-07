@@ -69,3 +69,13 @@ form textarea {
 .submitBtn {
   float: right;
 }
+
+@media screen and (min-width: 668px) {
+
+  .detailsContainer,
+  .mapContainer,
+  .formContainer {
+    padding-left: 97px;
+    padding-right: 98px;
+  }
+}

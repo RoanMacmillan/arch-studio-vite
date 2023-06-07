@@ -20,6 +20,7 @@
   font-size: 18px;
   line-height: 25px;
   color: #7d828f;
+  transition: color .2s ease;
 }
 
 
@@ -37,6 +38,10 @@
 .iconWrapper img {
     filter: brightness(0) invert(1);
     width: 58px;
+}
+
+.whiteSquare {
+  display: none;
 }
 
 
@@ -57,6 +62,8 @@
 .footerNav {
   flex-direction: row;
   gap: 0;
+  margin-right: auto;
+  margin-lefT: 40px;
 }
 
 .pLink {
@@ -67,4 +74,30 @@
   margin-right: 51px;
 }
 
+}
+
+@media screen and (min-width: 1150px) {
+
+
+  .footer {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .whiteSquare {
+
+    width: 126px;
+    background: white;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    display: unset;
+  }
+
+  .footerNav a:hover {
+
+    color: black;
+  }
 }

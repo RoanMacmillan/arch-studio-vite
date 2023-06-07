@@ -12,8 +12,14 @@
   justify-content: center;
   gap: 24px;
   cursor: pointer;
+  z-index: 2;
+  transition: background-color .2s ease;
 }
 
 .arrow {
   filter: invert(1);
+}
+
+.navButton:hover {
+  background-color: #38393d;
 }

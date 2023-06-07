@@ -25,7 +25,6 @@
   height: 240px;
   overflow: hidden;
   position: relative;
-
 }
 
 .whiteSq {
@@ -39,4 +38,85 @@
 .heroImgWrapper img {
   object-fit: cover;
   width: 100%;
+}
+
+.whiteBg {
+  display: none;
+}
+
+@media screen and (min-width: 668px) {
+
+  .heroContainer {
+    padding-left: 97px;
+    padding-right: 98px;
+  }
+
+  .heroImgWrapper {
+    height: 500px;
+  }
+
+  .heroContainer p,
+  .heroContainer h1 {
+
+    padding-left: 0;
+  }
+
+}
+
+@media screen and (min-width: 1150px) {
+
+
+  .whiteSq {
+    display: none;
+    
+  }
+
+  .whiteBg {
+    width: 628px;
+    height: 503px;
+    position: absolute;
+    right: 70px;
+    background: white;
+    bottom: -1px;
+    display: unset;
+  }
+
+  .heroContainer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    /* outline: 1px solid red; */
+    max-width: 1305px;
+    margin-lefT: auto;
+    margin-right: auto;
+  }
+
+  .heroImgWrapper {
+    height: 720px;
+  }
+
+  .textContainer {
+    position: absolute;
+    right: 98px;
+    background: white;
+    width: 446px;
+    height: 341px;
+    bottom: 0;
+    z-index: 2;
+    
+  }
+
+  .heroContainer h1 {
+    margin-top: 58px;
+    font-size: 72px;
+line-height: 64px;
+/* or 89% */
+
+letter-spacing: -2px;
+  }
+
+  .heroContainer p {
+    margin-top: 49px;
+    padding-right: 0;
+  }
 }
