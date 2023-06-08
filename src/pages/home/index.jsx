@@ -5,22 +5,22 @@ import current from '../../assets/images/current.svg'
 
 const slides = [
   {
-    background: "/public/images/home/desktop/image-hero-paramour.jpg",
+    background: "/images/home/desktop/image-hero-paramour.jpg",
     title: "Project Paramour",
     text: "Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.",
   },
   {
-    background: "/public/images/home/desktop/image-hero-seraph.jpg",
+    background: "/images/home/desktop/image-hero-seraph.jpg",
     title: "Seraph Station",
     text: "The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.",
   },
   {
-    background: "/public/images/home/desktop/image-hero-trinity.jpg",
+    background: "/images/home/desktop/image-hero-trinity.jpg",
     title: "Trinity Bank Tower",
     text: "Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.",
   },
   {
-    background: "/public/images/home/desktop/image-hero-federal.jpg",
+    background: "/images/home/desktop/image-hero-federal.jpg",
     title: "Federal II Tower",
     text: "A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.",
   },
