@@ -94,7 +94,7 @@
 }
 
 .aboutWrapper::before {
-  background-image: url("../public/images/home/mobile/image-small-team.jpg");
+  background-image: url("/images/home/mobile/image-small-team.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(70%);
@@ -147,7 +147,7 @@
 }
 
 .card1::before {
-  background-image: url("../public/images/portfolio/mobile/image-del-sol.jpg");
+  background-image: url("/images/portfolio/mobile/image-del-sol.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(60%) saturate(150%);
@@ -161,7 +161,7 @@
 }
 
 .card2::before {
-  background-image: url("../public/images/portfolio/tablet/image-228b.jpg");
+  background-image: url("/images/portfolio/tablet/image-228b.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(60%);
@@ -176,7 +176,7 @@
 }
 
 .card3::before {
-  background-image: url("../public/images/portfolio/tablet/image-prototype.jpg");
+  background-image: url("/images/portfolio/tablet/image-prototype.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(60%);
@@ -240,11 +240,9 @@ br {
     right: 98px;
   }
 
-  .heroWrapper::before {
-    background-image: url("../public/images/home/tablet/image-hero-paramour.jpg");
-  }
+  
   .aboutWrapper::before {
-    background-image: url("../public/images/home/tablet/image-small-team.jpg");
+    background-image: url("/images/home/tablet/image-small-team.jpg");
   }
 
   .heroContainer,
@@ -297,7 +295,7 @@ br {
   }
 
   .card1::before {
-    background-image: url("../public/images/portfolio/tablet/image-del-sol.jpg");
+    background-image: url("/images/portfolio/tablet/image-del-sol.jpg");
   }
 
   .imageCard strong {
@@ -355,11 +353,9 @@ br {
     margin-right: auto;
   }
 
-  .heroWrapper::before {
-    background-image: url("../public/images/home/desktop/image-hero-paramour.jpg");
-  }
+ 
   .aboutWrapper::before {
-    background-image: url("../public/images/home/desktop/image-small-team.jpg");
+    background-image: url("/images/home/desktop/image-small-team.jpg");
   }
 
   .textWrapper,
@@ -386,7 +382,7 @@ br {
 
   .imageRight {
     display: block;
-    background-image: url("../../../public/images/home/desktop/image-welcome.jpg");
+    background-image: url("/images/home/desktop/image-welcome.jpg");
     height: 568px;
     background-repeat: no-repeat;
     width: 350px;
@@ -460,17 +456,17 @@ br {
   }
 
   .card1::before {
-    background-image: url("../public/images/portfolio/desktop/image-del-sol.jpg");
+    background-image: url("/images/portfolio/desktop/image-del-sol.jpg");
     filter: brightness(80%) saturate(150%);
   }
 
   .card2::before {
-    background-image: url("../public/images/portfolio/desktop/image-228b.jpg");
+    background-image: url("/images/portfolio/desktop/image-228b.jpg");
     filter: brightness(100%);
   }
 
   .card3::before {
-    background-image: url("../public/images/portfolio/desktop/image-prototype.jpg");
+    background-image: url("/images/portfolio/desktop/image-prototype.jpg");
     filter: brightness(90%) saturate(120%);
   }
 
