@@ -104,4 +104,8 @@
   .footerNav a:hover {
     color: black;
   }
+
+  .logof {
+    width: 96.16px !important;
+  }
 }

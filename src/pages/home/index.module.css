@@ -323,7 +323,6 @@ br {
     letter-spacing: 3px;
     color: #eeeff4;
     top: 89px;
-    /* outline: 1px solid red; */
   }
 
   .featureBtn {
@@ -373,8 +372,8 @@ br {
   }
 
   .heroWrapper p {
-    /* width: 445px; */
-    width: 50%;
+    width: 445px;
+    /* width: 50%; */
     margin-bottom: 41px;
   }
 
@@ -454,7 +453,7 @@ br {
   }
 
   .imageCard strong {
-    right: -11px;
+    right: -15px;
     top: 45px;
   }
 

@@ -94,7 +94,7 @@ export default function Home() {
           <h1>Small team, big ideas</h1>
 
           <Button href="/about" width="187px">
-            About us
+            About Us
           </Button>
         </div>
       </div>
