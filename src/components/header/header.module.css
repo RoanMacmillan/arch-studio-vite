@@ -96,6 +96,18 @@
   }
 }
 
+@media screen and (min-width: 1150px) {
+
+  .nav {
+    
+    gap: 94.84px;
+  }
+
+  .logo {
+    width: 96.16px;
+  }
+}
+
 @media screen and (min-width: 1320px) {
 
 

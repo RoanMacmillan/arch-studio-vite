@@ -11,7 +11,7 @@ export default function Leaders() {
           <img src={leader['profile image']} alt="Profile" />
           </div>
           <h4>{leader.name}</h4>
-          <p>{leader.role}</p>
+          <p>{leader.role}</p> 
         </div>
       ))}
     </div>

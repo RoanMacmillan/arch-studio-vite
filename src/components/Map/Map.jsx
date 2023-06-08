@@ -1,9 +1,10 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import styles from './Map.module.css'
 
 function MapComponent({center, markerPositions}) {
   return (
-    <MapContainer center={center} zoom={7} style={{ height: "367px", width: "100%" }}>
+    <MapContainer center={center} zoom={7} className={styles.mapContainer}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

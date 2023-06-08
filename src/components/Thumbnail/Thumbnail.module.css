@@ -64,7 +64,7 @@
 
   .thumbWrapper {
     margin-bottom: 0;
-    height: 560px;
+    max-height: 560px;
     max-height: unset;
   }
 }

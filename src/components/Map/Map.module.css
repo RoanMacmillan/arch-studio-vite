@@ -1,0 +1,13 @@
+/* MapComponent.module.css */
+
+.mapContainer {
+    height: 367px;
+    width: 100%;
+  }
+  
+  @media (min-width: 1150px) {
+    .mapContainer {
+      height: 560px;
+    }
+  }
+  

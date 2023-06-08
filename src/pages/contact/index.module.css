@@ -62,20 +62,118 @@ form textarea {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  /* margin-bottom: 42px; */
+  padding-left: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.3125px;
 }
 
+form textarea {
+  padding-bottom: 43px;
+}
 
+form input::placeholder,
+form textarea::placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.3125px;
+  color: #c8ccd8;
+}
 
 .submitBtn {
   float: right;
 }
 
-@media screen and (min-width: 668px) {
+.detailsChild button {
+  background: none;
+  border: none;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: right;
+  color: #1b1d23;
+}
 
+.detailsChild button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.leftChild {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitBtn {
+  border: none;
+  background: #1b1d23;
+  height: 80px;
+  width: 80px;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitBtn:hover {
+  background: #2e3036;
+  cursor: pointer;
+}
+
+.arrow {
+  filter: brightness(0) invert(1);
+}
+
+.contactContainer {
+  margin-bottom: 200px;
+}
+
+form {
+
+}
+
+.error {
+  color: red;
+  padding-left: 32px;
+  font-size: .8em;
+  z-index: 500;
+  top: 0;
+}
+
+@media screen and (min-width: 668px) {
   .detailsContainer,
   .mapContainer,
   .formContainer {
     padding-left: 97px;
     padding-right: 98px;
+  }
+}
+
+
+
+@media screen and (min-width: 1150px) {
+  .mapContainer,
+  .detailsContainer,
+  .formContainer {
+    max-width: 1305px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .detailsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

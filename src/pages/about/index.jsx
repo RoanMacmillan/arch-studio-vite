@@ -10,6 +10,7 @@ export default function page() {
         heroImg="/images/about/desktop/image-hero.jpg"
         heading="Your team of professionals"
         paragraph="Our small team of world-class professionals will work with you every step of the way. Strong relationships are at the core of everything we do. This extends to the relationship our projects have with their surroundings."
+        big='About'
       />
 
       <div className={styles.aboutContent}>
@@ -40,8 +41,11 @@ export default function page() {
         <div className={styles.imageRight}></div>
         </div>
 
+        <div className={styles.leaderWrapper}>
+
         <h3>The<br></br> Leaders</h3> 
         <Leaders />
+        </div>
       </div>
     </div>
   );

@@ -45,7 +45,6 @@
 }
 
 @media screen and (min-width: 668px) {
-
   .heroContainer {
     padding-left: 97px;
     padding-right: 98px;
@@ -57,18 +56,13 @@
 
   .heroContainer p,
   .heroContainer h1 {
-
     padding-left: 0;
   }
-
 }
 
 @media screen and (min-width: 1150px) {
-
-
   .whiteSq {
     display: none;
-    
   }
 
   .whiteBg {
@@ -85,9 +79,8 @@
     display: flex;
     position: relative;
     width: 100%;
-    /* outline: 1px solid red; */
     max-width: 1305px;
-    margin-lefT: auto;
+    margin-left: auto;
     margin-right: auto;
   }
 
@@ -103,20 +96,36 @@
     height: 341px;
     bottom: 0;
     z-index: 2;
-    
   }
 
   .heroContainer h1 {
     margin-top: 58px;
     font-size: 72px;
-line-height: 64px;
-/* or 89% */
+    line-height: 64px;
+    /* or 89% */
 
-letter-spacing: -2px;
+    letter-spacing: -2px;
   }
 
   .heroContainer p {
     margin-top: 49px;
     padding-right: 0;
+  }
+
+  .bigText {
+    font-family: "League Spartan";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 250px;
+    text-align: right;
+    letter-spacing: -5px;
+    color: #eeeff4;
+    position: absolute;
+    right: 100px;
+    top: 35px;
+  }
+
+  .heroImg {
+    filter: brightness(70%);
   }
 }
