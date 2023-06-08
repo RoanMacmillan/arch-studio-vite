@@ -93,8 +93,6 @@
   padding-right: 32px; */
 }
 
-
-
 .aboutWrapper::before {
   background-image: url("../public/images/home/mobile/image-small-team.jpg");
   background-repeat: no-repeat;
@@ -208,11 +206,12 @@ br {
   display: none !important;
 }
 
-.currentPage {
+
+.imageRight {
   display: none;
 }
 
-.imageRight {
+.current {
   display: none;
 }
 
@@ -232,15 +231,13 @@ br {
   }
 
   .heroContainer {
-   
     padding-left: 97px;
     padding-right: 98px;
   }
-  
+
   .background {
     left: 97px;
     right: 98px;
-   
   }
 
   .heroWrapper::before {
@@ -346,31 +343,9 @@ br {
     display: none !important;
   }
 
-  .currentPage {
-    display: unset;
-    position: absolute;
-    left: -6px;
-    top: 192px;
-    transform: rotate(90deg);
-  }
+  
 
-  .currentPage span {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    letter-spacing: 18px;
-    color: #c8ccd8;
-  }
-
-  .currentPage .currentLine {
-    width: 104px;
-    height: 1px;
-    background: #c8ccd8;
-    position: absolute;
-    top: 10px;
-    right: 161px;
-  }
+  
 }
 
 @media screen and (min-width: 1150px) {
@@ -395,12 +370,13 @@ br {
   }
 
   .heroWrapper h1 {
-    width: 50%;
+    width: 80%;
     margin-top: 186px;
   }
 
   .heroWrapper p {
-    width: 445px;
+    /* width: 445px; */
+    width: 50%;
     margin-bottom: 41px;
   }
 
@@ -422,7 +398,7 @@ br {
     margin-top: 200px;
     margin-bottom: 200px;
   }
- 
+
   .leftText {
     width: 446px;
     margin-top: auto;
@@ -500,9 +476,43 @@ br {
 
   .slideBtns {
     bottom: 0;
+    left: 18px;
     display: unset;
     position: absolute;
     z-index: 9999999999;
   }
-  
+
+  .slideBtn {
+    width: 80px;
+    height: 80px;
+    border: none;
+    background: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #7d828f;
+    cursor: pointer;
+  }
+
+  .slideBtn:Hover {
+    background: rgb(235, 235, 235);
+  }
+
+  .active {
+    background: #1B1D23;
+    color: white;
+  }
+
+  .active:hover {
+    background: #1B1D23;
+
+  }
+
+  .current {
+    display: unset;
+    position: absolute;
+    left: 63px;
+    top: 0;
+  }
 }

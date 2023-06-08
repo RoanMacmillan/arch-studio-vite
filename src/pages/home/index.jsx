@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
 import Button from "../../components/button/button";
+import current from '../../assets/images/current.svg'
 
 const slides = [
   {
@@ -10,18 +11,18 @@ const slides = [
   },
   {
     background: "/public/images/home/desktop/image-hero-seraph.jpg",
-    title: "Project 2",
-    text: "Text for project 2...",
+    title: "Seraph Station",
+    text: "The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.",
   },
   {
     background: "/public/images/home/desktop/image-hero-trinity.jpg",
-    title: "Project 3",
-    text: "Text for project 3...",
+    title: "Trinity Bank Tower",
+    text: "Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.",
   },
   {
     background: "/public/images/home/desktop/image-hero-federal.jpg",
-    title: "Project 4",
-    text: "Text for project 4...",
+    title: "Federal II Tower",
+    text: "A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.",
   },
 ];
 
@@ -30,10 +31,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className={styles.currentPage}>
-        <div className={styles.currentLine}></div>
-        <span>home</span>
-      </div>
+      <img className={styles.current} src={current} alt='current page'></img>
       <div className={styles.heroContainer}>
         <div
           className={styles.background}
@@ -48,9 +46,13 @@ export default function Home() {
         <div className={styles.slideBtns}>
 
         {slides.map((_, idx) => (
-          <button className={styles.slideBtn} key={idx} onClick={() => setCurrentSlide(idx)}>
-            {idx + 1}
-          </button>
+          <button 
+          className={`${styles.slideBtn} ${currentSlide === idx ? styles.active : ''}`}
+          key={idx} 
+          onClick={() => setCurrentSlide(idx)}
+        >
+          {(idx + 1).toString().padStart(2, '0')}
+        </button>
         ))}
         </div>
 
