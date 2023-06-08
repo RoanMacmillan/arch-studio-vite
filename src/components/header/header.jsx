@@ -28,7 +28,7 @@ export default function Header() {
         </Link>
         <div className={styles.desktopLinks}>
           <Link className={styles.pLink} to="/portfolio">Portfolio</Link>
-          <Link className={styles.aboutLink} to="/about">About us</Link>
+          <Link className={styles.aboutLink} to="/about">About Us</Link>
           <Link to="/contact">Contact</Link>
         </div>
 

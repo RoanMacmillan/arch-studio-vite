@@ -24,7 +24,7 @@
   bottom: 0;
   background-size: cover;
   background-position: center;
-  filter: brightness(80%);
+  filter: brightness(70%);
   z-index: -1;
 }
 
@@ -111,7 +111,7 @@
 .featuredContainer {
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 132px;
+  padding-bottom: 176px;
 }
 
 .featuredContainer h1 {
@@ -348,11 +348,7 @@ br {
 }
 
 @media screen and (min-width: 1150px) {
-  main {
-    max-width: 1305px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 
  
   .aboutWrapper::before {
@@ -364,7 +360,12 @@ br {
   .featuredContainer {
     /* padding-left: 0px; */
     /* padding-right: 0px; */
+    max-width: 1305px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  
 
   .heroWrapper h1 {
     width: 80%;
@@ -392,7 +393,7 @@ br {
   .textWrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 200px;
+    margin-top: 195px;
     margin-bottom: 200px;
   }
 
@@ -406,7 +407,7 @@ br {
 
   .textWrapper h2 {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 43px;
   }
 
   .textWrapper p {
@@ -436,6 +437,7 @@ br {
   .cardContainer {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
   }
 
   .imageCard {
