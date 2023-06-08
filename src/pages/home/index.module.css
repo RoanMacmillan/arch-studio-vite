@@ -476,7 +476,7 @@ br {
 
   .slideBtns {
     bottom: 0;
-    left: 18px;
+    left: 17px;
     display: unset;
     position: absolute;
     z-index: 9999999999;
