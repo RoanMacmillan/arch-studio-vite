@@ -83,6 +83,7 @@
 
 .aboutWrapper h1 {
   margin-bottom: 23px;
+  max-width: 445px;
 }
 
 .aboutWrapper {
