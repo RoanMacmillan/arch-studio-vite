@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./index.module.css";
 import Button from "../../components/button/button";
-import current from '../../assets/images/current.svg'
+import current from "../../assets/images/current.svg";
+import useIntersectionObserver from "../../components/useIntersectionObserver/useIntersectionObserver";
 
 const slides = [
   {
@@ -28,37 +29,63 @@ const slides = [
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [brightness, setBrightness] = useState("100%");
+  const [textBtnRef, textBtnVisible] = useIntersectionObserver();
+  const [heroContainerRef, heroContainerVisible] = useIntersectionObserver();
+  const [textWrapperRef, textWrapperVisible] = useIntersectionObserver();
+  const [aboutWrapperRef, aboutWrapperVisible] = useIntersectionObserver();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setBrightness("60%");
+    }, 700); // delay of 1 second
+
+    return () => {
+      clearTimeout(timer); // clear timeout if the component is unmounted
+    };
+  }, []);
 
   return (
     <main>
-      <img className={styles.current} src={current} alt='current page'></img>
-      <div className={styles.heroContainer}>
+      <img className="current" src={current} alt="current page"></img>
+      <div ref={heroContainerRef} className={`${styles.heroContainer} ${heroContainerVisible ? 'fadeInLoad' : 'hidden'} `}>
         <div
           className={styles.background}
-          style={{ backgroundImage: `url(${slides[currentSlide].background})` }}
+          style={{
+            backgroundImage: `url(${slides[currentSlide].background})`,
+            filter: `brightness(${brightness})`,
+            transition: "filter 1s ease",
+          }}
         />
         <div className={styles.heroWrapper}>
-          <h1>{slides[currentSlide].title}</h1>
-          <p>{slides[currentSlide].text}</p>
+          <div
+            ref={textBtnRef}
+            className={`${styles.textBtn} ${
+              textBtnVisible ? "fadeInLoadTransform" : "hiddenTransform"
+            } `}
+          >
+            <h1>{slides[currentSlide].title}</h1>
+            <p>{slides[currentSlide].text}</p>
 
-          <Button href="/portfolio">See Our Portfolio</Button>
+            <Button href="/portfolio">See Our Portfolio</Button>
+          </div>
         </div>
         <div className={styles.slideBtns}>
-
-        {slides.map((_, idx) => (
-          <button 
-          className={`${styles.slideBtn} ${currentSlide === idx ? styles.active : ''}`}
-          key={idx} 
-          onClick={() => setCurrentSlide(idx)}
-        >
-          {(idx + 1).toString().padStart(2, '0')}
-        </button>
-        ))}
+          {slides.map((_, idx) => (
+            <button
+              className={`${styles.slideBtn} ${
+                currentSlide === idx ? styles.active : ""
+              }`}
+              key={idx}
+              onClick={() => setCurrentSlide(idx)}
+            >
+              {(idx + 1).toString().padStart(2, "0")}
+            </button>
+          ))}
         </div>
-
       </div>
 
-      <div className={styles.textWrapper}>
+      <div ref={textWrapperRef} className={`${styles.textWrapper} ${textWrapperVisible ? 'fadeInLoad' : 'hidden'}  `}>
         <div className={styles.leftText}>
           <div className={styles.line}></div>
           <strong className={styles.bgText}>Welcome</strong>
@@ -90,7 +117,7 @@ export default function Home() {
       </div>
 
       <div className={styles.heroContainer}>
-        <div className={`${styles.heroWrapper} ${styles.aboutWrapper}`}>
+        <div ref={aboutWrapperRef} className={`${styles.heroWrapper} ${styles.aboutWrapper} ${aboutWrapperVisible ? 'fadeInLoad' : 'hidden'}`}>
           <h1>Small team, big ideas</h1>
 
           <Button href="/about" width="187px">

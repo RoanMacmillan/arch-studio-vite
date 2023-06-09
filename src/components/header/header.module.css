@@ -64,17 +64,17 @@
 
   .desktopLinks {
     display: flex;
-    
+    gap: 60px;
   }
 
-  .desktopLinks a {
+  
+
+  .defaultLink {
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
     color: #7d828f;
-    transition: color .2s ease;
-    
-  }
+}
 
   .desktopLinks a:hover {
 
@@ -94,6 +94,10 @@
 
   .aboutLink {
     margin-right: 51px;
+  }
+
+  .activeLink {
+    color: black;
   }
 }
 

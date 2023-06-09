@@ -14,6 +14,7 @@
   margin-right: auto;
   /* padding-left: 32px;
   padding-right: 32px; */
+  
 }
 
 .background {
@@ -24,12 +25,16 @@
   bottom: 0;
   background-size: cover;
   background-position: center;
-  filter: brightness(70%);
+  /* filter: brightness(100%); */
   z-index: -1;
 }
 
 .slideBtns {
   display: none;
+}
+
+.textBtn {
+  /* outline: 1px solid red; */
 }
 
 .heroWrapper h1 {
@@ -372,8 +377,8 @@ br {
   }
 
   .heroWrapper p {
-    width: 445px;
-    /* width: 50%; */
+    /* width: 445px; */
+    width: 50%;
     margin-bottom: 41px;
   }
 

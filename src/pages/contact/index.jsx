@@ -3,6 +3,7 @@ import styles from "./index.module.css";
 import AboutContactHero from "../../components/AboutContactHero/AboutContactHero";
 import MapComponent from "../../components/Map/Map";
 import arrow from "../../../public/images/icons/icon-arrow.svg";
+import current from "../../assets/images/current4.svg";
 
 export default function page() {
   const defaultPosition1 = [29.94021128960196, -95.34991622082381];
@@ -24,10 +25,10 @@ export default function page() {
   };
 
   const validateEmail = (email) => {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var re =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
   };
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -75,18 +76,19 @@ export default function page() {
 
   return (
     <div className={styles.contactContainer}>
+      <img className="current" src={current} alt="current page"></img>
+
       <AboutContactHero
         heroImg="/images/contact/desktop/image-hero.jpg"
         heading="Tell us about your project"
         paragraph="We’d love to hear more about your project. Please, leave a message below or give us a call. We have two offices, one in Texas and one in Tennessee. If you find yourself nearby, come say hello!"
-        big='Contact'
+        big="Contact"
       />
 
       <div className={styles.detailsContainer}>
-      <h2>Contact Details</h2>
+        <h2>Contact Details</h2>
 
         <div className={styles.detailsChild}>
-
           <div className={styles.leftChild}>
             <h3>Main Office</h3>
             <span>Mail : archone@mail.com</span>
@@ -116,54 +118,55 @@ export default function page() {
       <div className={styles.formContainer}>
         <h2>Connect with us</h2>
         <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name"></label>
-          <br />
-          {errors.name && <span className={styles.error}>{errors.name}</span>}
+          <div>
+            <label htmlFor="name"></label>
+            <br />
+            {errors.name && <span className={styles.error}>{errors.name}</span>}
 
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Name"
-            value={form.name}
-            onChange={handleInputChange}
-            
-          />
-        </div>
-        <div>
-          <label htmlFor="email"></label>
-          <br />
-          {errors.email && <span className={styles.error}>{errors.email}</span>}
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              value={form.name}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="email"></label>
+            <br />
+            {errors.email && (
+              <span className={styles.error}>{errors.email}</span>
+            )}
 
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            value={form.email}
-            onChange={handleInputChange}
-            
-          />
-        </div>
-        <div>
-          <label htmlFor="message"></label>
-          <br />
-          {errors.message && <span className={styles.error}>{errors.message}</span>}
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              value={form.email}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="message"></label>
+            <br />
+            {errors.message && (
+              <span className={styles.error}>{errors.message}</span>
+            )}
 
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Message"
-            value={form.message}
-            onChange={handleInputChange}
-            
-          ></textarea>
-        </div>
-        <button className={styles.submitBtn} type="submit">
-          <img className={styles.arrow} src={arrow} alt="arrow"></img>
-        </button>
-      </form>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              value={form.message}
+              onChange={handleInputChange}
+            ></textarea>
+          </div>
+          <button className={styles.submitBtn} type="submit">
+            <img className={styles.arrow} src={arrow} alt="arrow"></img>
+          </button>
+        </form>
       </div>
     </div>
   );

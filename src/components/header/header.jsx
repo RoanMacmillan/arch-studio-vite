@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import styles from "./header.module.css";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
@@ -13,6 +14,9 @@ export default function Header() {
       document.body.classList.remove("noScroll");
     }
   };
+
+  const isActive = (path) =>
+    location.pathname === path ? styles.activeLink : "";
 
   useEffect(() => {
     return () => {
@@ -27,9 +31,15 @@ export default function Header() {
           <img className={styles.logo} src="/images/logo.svg" alt="logo"></img>
         </Link>
         <div className={styles.desktopLinks}>
-          <Link className={styles.pLink} to="/portfolio">Portfolio</Link>
-          <Link className={styles.aboutLink} to="/about">About Us</Link>
-          <Link to="/contact">Contact</Link>
+          <NavLink className={`${styles.defaultLink} ${isActive("/portfolio")}`} to="/portfolio">
+          Portfolio
+        </NavLink>
+        <NavLink className={`${styles.defaultLink} ${isActive("/about")}`} to="/about">
+          About Us
+        </NavLink>
+        <NavLink className={`${styles.defaultLink} ${isActive("/contact")}`} to="/contact">
+          Contact
+        </NavLink>
         </div>
 
         {menuOpen && (

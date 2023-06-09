@@ -79,3 +79,53 @@ a {
   overflow: hidden;
   height: 100%;  /* optional, depending on your specific layout */
 }
+
+.current {
+  display: none;
+}
+
+
+.fadeInLoad {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.fadeInLoadTransform {
+
+  opacity: 1;
+  visibility: visible;
+  transition: 1s all 1.2s ease;
+  /* transition-delay: 1s; */
+  transform: translateY(0);
+}
+
+.hiddenTransform {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (min-width: 1378px) {
+
+
+  .current {
+    display: unset;
+    position: absolute;
+    left: 63px;
+    top: 0;
+  }
+
+}

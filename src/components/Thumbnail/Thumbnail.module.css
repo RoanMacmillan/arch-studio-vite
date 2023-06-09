@@ -12,11 +12,14 @@
   filter: brightness(70%);
 }
 
+
+
 .thumbWrapper h2,
 .thumbWrapper span {
   position: absolute;
   left: 24px;
   color: white;
+  
 }
 
 .thumbWrapper h2 {
@@ -34,6 +37,8 @@
 .desktopImg {
   display: none;
 }
+
+
 
 @media screen and (min-width: 668px) {
   .tabletImg {
@@ -66,5 +71,27 @@
     margin-bottom: 0;
     max-height: 560px;
     max-height: unset;
+  }
+
+
+  .thumbWrapper img {
+    filter: brightness(90%);
+    transition: filter .3s ease;
+  }
+
+  .thumbWrapper img:hover {
+    filter: brightness(60%);
+  }
+  
+  .thumbWrapper:hover h2,
+  .thumbWrapper:hover span {
+    opacity: 1;
+  }
+  
+  
+  .thumbWrapper h2,
+  .thumbWrapper span {
+    opacity: 0;
+    transition: opacity .3s ease;
   }
 }
