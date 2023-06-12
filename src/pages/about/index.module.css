@@ -34,6 +34,10 @@
   margin-top: 112px;
 }
 
+.textLeft h2 {
+  margin-bottom: 21px;
+}
+
 
 @media screen and (min-width: 568px) {
   .aboutContent {
