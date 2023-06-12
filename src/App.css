@@ -124,7 +124,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1378px) {
+@media screen and (min-width: 1588px) {
   .current {
     display: unset;
     position: absolute;

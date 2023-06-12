@@ -3,10 +3,14 @@ import leadersData from '../../../leaders.json'
 import styles from './Leaders.module.css'
 import twitter from '../../../public/images/icons/icon-twitter.svg';
 import linkedin from '../../../public/images/icons/icon-linkedin.svg';
+import useIntersectionObserver from '../useIntersectionObserver/useIntersectionObserver';
 
 export default function Leaders() { 
+
+  const [leadersContainerRef, leadersContainerVisible] = useIntersectionObserver();
+
   return (
-    <div className={styles.leadersContainer}>
+    <div ref={leadersContainerRef} className={`${styles.leadersContainer} ${leadersContainerVisible ? 'fadeInLoad' : 'hidden' }`}>
       {leadersData.map((leader, index) => (
         <div className={styles.leadersChild} key={index}>
           <div className={styles.leadersImgWrapper}>

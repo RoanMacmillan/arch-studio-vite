@@ -3,14 +3,18 @@ import styles from "./index.module.css";
 import AboutContactHero from "../../components/AboutContactHero/AboutContactHero";
 import Leaders from "../../components/Leaders/Leaders";
 import current from "../../assets/images/current3.svg";
+import useIntersectionObserver from "../../components/useIntersectionObserver/useIntersectionObserver";
 
 export default function page() {
+
+  const [aboutContentRef, aboutContentVisible] = useIntersectionObserver();
+
+
   return (
     <div className={styles.about}>
-            <div className='currentContainer'>
-
-      <img className="current" src={current} alt="current page"></img>
-</div>
+      <div className="currentContainer">
+        <img className="current" src={current} alt="current page"></img>
+      </div>
       <AboutContactHero
         heroImg="/images/about/desktop/image-hero.jpg"
         heading="Your team of professionals"
@@ -18,8 +22,7 @@ export default function page() {
         big="About"
       />
 
-      <div className={styles.aboutContent}>
-        
+      <div ref={aboutContentRef} className={`${styles.aboutContent} ${aboutContentVisible ? 'fadeInLoad' : 'hidden'} `}>
         <div className={styles.middleContainer}>
           <div className={styles.textLeft}>
             <h2>

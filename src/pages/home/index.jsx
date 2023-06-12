@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
-    background: "/images/home/desktop/image-hero-paramour.jpg",
+    background: "/images/home/desktop/image-hero-paramour.webp",
     title: "Project Paramour",
     text: "Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.",
   },
