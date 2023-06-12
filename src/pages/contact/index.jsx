@@ -76,7 +76,9 @@ export default function page() {
 
   return (
     <div className={styles.contactContainer}>
+      <div className="currentContainer">
       <img className="current" src={current} alt="current page"></img>
+      </div>
 
       <AboutContactHero
         heroImg="/images/contact/desktop/image-hero.jpg"

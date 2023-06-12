@@ -555,10 +555,5 @@ br {
     background: #1b1d23;
   }
 
-  .current {
-    display: unset;
-    position: absolute;
-    left: 63px;
-    top: 0;
-  }
+ 
 }

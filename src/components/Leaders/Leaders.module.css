@@ -54,9 +54,16 @@
     filter: brightness(70%);
   }
 
+  .pfp {
+    filter: brightness(100%);
+    transition: filter .3s ease;
+    
+  }
+
   .leadersImgWrapper:hover .twitter,
   .leadersImgWrapper:hover .linkedin {
     opacity: 1;
+    transition: opacity .3s ease;
   }
 
   .twitter,

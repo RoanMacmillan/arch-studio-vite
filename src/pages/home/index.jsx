@@ -50,13 +50,17 @@ export default function Home() {
 
   return (
     <main>
+      <div className="currentContainer">
       <img className="current" src={current} alt="current page"></img>
+      </div>
       <div
         ref={heroContainerRef}
         className={`${styles.heroContainer} ${
           heroContainerVisible ? "fadeInLoad" : "hidden"
         } `}
       >
+        
+
         <div
           className={styles.background}
           style={{

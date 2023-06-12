@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
 
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /*
@@ -16,10 +17,7 @@
 /*
   3. Allow percentage-based heights in the application
 */
-html{
-  
-
-  
+html {
 }
 /*
   Typographic tweaks!
@@ -31,8 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
   /* min-width: 100vw; */
   /* overflow-x: hidden; */
-font-family: 'League Spartan', sans-serif;
-
+  font-family: "League Spartan", sans-serif;
 }
 
 .app {
@@ -40,30 +37,44 @@ font-family: 'League Spartan', sans-serif;
   display: flex;
   flex-direction: column;
   /* min-width: 100vw; */
-  }
+}
 /*
   6. Improve media defaults
 */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /*
   7. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /*
   8. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -72,18 +83,15 @@ a {
   text-decoration: none;
 }
 
-
-
 /* in your CSS file */
 .noScroll {
   overflow: hidden;
-  height: 100%;  /* optional, depending on your specific layout */
+  height: 100%; /* optional, depending on your specific layout */
 }
 
 .current {
   display: none;
 }
-
 
 .fadeInLoad {
   opacity: 1;
@@ -92,7 +100,6 @@ a {
 }
 
 .fadeInLoadTransform {
-
   opacity: 1;
   visibility: visible;
   transition: 1s all 1.2s ease;
@@ -117,15 +124,22 @@ a {
   }
 }
 
-
 @media screen and (min-width: 1378px) {
-
-
   .current {
     display: unset;
     position: absolute;
-    left: 63px;
-    top: 0;
+    left: -150px;
+    top: 0px;
   }
 
+  .currentContainer {
+    position: absolute;
+    top: 0;
+    max-width: 1110px;
+    width: 100%;
+    inset: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+  }
 }

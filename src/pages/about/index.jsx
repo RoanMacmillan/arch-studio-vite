@@ -7,8 +7,10 @@ import current from "../../assets/images/current3.svg";
 export default function page() {
   return (
     <div className={styles.about}>
-      <img className="current" src={current} alt="current page"></img>
+            <div className='currentContainer'>
 
+      <img className="current" src={current} alt="current page"></img>
+</div>
       <AboutContactHero
         heroImg="/images/about/desktop/image-hero.jpg"
         heading="Your team of professionals"
@@ -17,6 +19,7 @@ export default function page() {
       />
 
       <div className={styles.aboutContent}>
+        
         <div className={styles.middleContainer}>
           <div className={styles.textLeft}>
             <h2>
