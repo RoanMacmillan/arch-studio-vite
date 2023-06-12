@@ -19,7 +19,6 @@ export default function Footer() {
         <Button href='/portfolio' width="252px">
           See Our Portfolio
         </Button>
-        <div className={styles.whiteSquare}></div>
     </footer>
   );
 }

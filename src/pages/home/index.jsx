@@ -3,6 +3,7 @@ import styles from "./index.module.css";
 import Button from "../../components/button/button";
 import current from "../../assets/images/current.svg";
 import useIntersectionObserver from "../../components/useIntersectionObserver/useIntersectionObserver";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -34,11 +35,13 @@ export default function Home() {
   const [heroContainerRef, heroContainerVisible] = useIntersectionObserver();
   const [textWrapperRef, textWrapperVisible] = useIntersectionObserver();
   const [aboutWrapperRef, aboutWrapperVisible] = useIntersectionObserver();
+  const [featuredContainerRef, featuredContainerVisible] =
+    useIntersectionObserver();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setBrightness("60%");
-    }, 700); // delay of 1 second
+      setBrightness("65%");
+    }, 700); 
 
     return () => {
       clearTimeout(timer); // clear timeout if the component is unmounted
@@ -48,7 +51,12 @@ export default function Home() {
   return (
     <main>
       <img className="current" src={current} alt="current page"></img>
-      <div ref={heroContainerRef} className={`${styles.heroContainer} ${heroContainerVisible ? 'fadeInLoad' : 'hidden'} `}>
+      <div
+        ref={heroContainerRef}
+        className={`${styles.heroContainer} ${
+          heroContainerVisible ? "fadeInLoad" : "hidden"
+        } `}
+      >
         <div
           className={styles.background}
           style={{
@@ -85,7 +93,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div ref={textWrapperRef} className={`${styles.textWrapper} ${textWrapperVisible ? 'fadeInLoad' : 'hidden'}  `}>
+      <div
+        ref={textWrapperRef}
+        className={`${styles.textWrapper} ${
+          textWrapperVisible ? "fadeInLoad" : "hidden"
+        }  `}
+      >
         <div className={styles.leftText}>
           <div className={styles.line}></div>
           <strong className={styles.bgText}>Welcome</strong>
@@ -117,7 +130,12 @@ export default function Home() {
       </div>
 
       <div className={styles.heroContainer}>
-        <div ref={aboutWrapperRef} className={`${styles.heroWrapper} ${styles.aboutWrapper} ${aboutWrapperVisible ? 'fadeInLoad' : 'hidden'}`}>
+        <div
+          ref={aboutWrapperRef}
+          className={`${styles.heroWrapper} ${styles.aboutWrapper} ${
+            aboutWrapperVisible ? "fadeInLoad" : "hidden"
+          }`}
+        >
           <h1>Small team, big ideas</h1>
 
           <Button href="/about" width="187px">
@@ -126,7 +144,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.featuredContainer}>
+      <div
+        ref={featuredContainerRef}
+        className={`${styles.featuredContainer} ${
+          featuredContainerVisible ? "fadeInLoad" : "hidden"
+        }`}
+      >
         <div className={styles.featureBtnWrapper}>
           <h1>Featured</h1>
           <Button className={styles.featureBtn} href="/portfolio" width="169px">
@@ -137,21 +160,21 @@ export default function Home() {
         <div className={styles.cardContainer}>
           <div className={`${styles.imageCard} ${styles.card1}`}>
             <h2>Project Del Sol</h2>
-            <a>View all projects</a>
+            <Link to="/portfolio">View All Projects</Link>
 
             <strong>1</strong>
           </div>
 
           <div className={`${styles.imageCard} ${styles.card2}`}>
             <h2>228B Tower</h2>
-            <a>View all projects</a>
+            <Link to="/portfolio">View All Projects</Link>
 
             <strong>2</strong>
           </div>
 
           <div className={`${styles.imageCard} ${styles.card3}`}>
             <h2>Le Prototype</h2>
-            <a>View all projects</a>
+            <Link to="/portfolio">View All Projects</Link>
 
             <strong>3</strong>
           </div>

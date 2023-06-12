@@ -1,6 +1,6 @@
 .heroWrapper {
   position: relative;
-  height: 500px;
+  height: 560px;
   overflow: hidden;
   padding-left: 32px;
   padding-right: 32px;
@@ -14,7 +14,6 @@
   margin-right: auto;
   /* padding-left: 32px;
   padding-right: 32px; */
-  
 }
 
 .background {
@@ -35,6 +34,7 @@
 
 .textBtn {
   /* outline: 1px solid red; */
+  max-width: 400px;
 }
 
 .heroWrapper h1 {
@@ -88,7 +88,7 @@
 
 .aboutWrapper h1 {
   margin-bottom: 23px;
-  max-width: 445px;
+  max-width: 310px;
 }
 
 .aboutWrapper {
@@ -212,7 +212,6 @@ br {
   display: none !important;
 }
 
-
 .imageRight {
   display: none;
 }
@@ -236,6 +235,10 @@ br {
     position: relative;
   }
 
+  .textBtn {
+    max-width: 544px;
+  }
+
   .heroContainer {
     padding-left: 97px;
     padding-right: 98px;
@@ -246,7 +249,6 @@ br {
     right: 98px;
   }
 
-  
   .aboutWrapper::before {
     background-image: url("/images/home/tablet/image-small-team.jpg");
   }
@@ -264,8 +266,8 @@ br {
   }
 
   .heroWrapper h1 {
-    font-size: 96px;
-    line-height: 80px;
+    font-size: 66px;
+    line-height: 60px;
     letter-spacing: -2px;
     margin-top: 186px;
   }
@@ -345,18 +347,30 @@ br {
   .mobileBtn {
     display: none !important;
   }
+}
 
-  
 
-  
+@media screen and (min-width: 731px) {
+
+  .heroWrapper h1 {
+    font-size: 96px;
+    line-height: 80px;
+
+  }
+
+  .aboutWrapper h1 {
+    margin-bottom: 23px;
+    max-width: 550px;
+  }
 }
 
 @media screen and (min-width: 1150px) {
-  
-
- 
   .aboutWrapper::before {
     background-image: url("/images/home/desktop/image-small-team.jpg");
+  }
+
+  .textBtn {
+    max-width: unset;
   }
 
   .textWrapper,
@@ -368,8 +382,6 @@ br {
     margin-left: auto;
     margin-right: auto;
   }
-
-  
 
   .heroWrapper h1 {
     width: 80%;
@@ -452,29 +464,61 @@ br {
     transition: transform 0.3s ease;
   }
 
-  .imageCard:hover {
-    transform: translateY(-10px);
+  .imageCard:hover h2,
+  .imageCard:hover a {
+    opacity: 1;
+  }
+
+  .imageCard h2,
+  .imageCard a {
+    transition: opacity .8s ease;
+    opacity: 0;
+  }
+
+  .imageCard a:hover {
+    text-decoration: underline;
     cursor: pointer;
   }
 
   .imageCard strong {
     right: -15px;
     top: 45px;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+
+  .imageCard:hover strong {
+    opacity: 0.5;
   }
 
   .card1::before {
     background-image: url("/images/portfolio/desktop/image-del-sol.jpg");
-    filter: brightness(80%) saturate(150%);
+    filter: brightness(90%) saturate(120%);
+    transition: filter 0.8s ease;
+  }
+
+  .card1:hover::before {
+    filter: brightness(60%);
   }
 
   .card2::before {
     background-image: url("/images/portfolio/desktop/image-228b.jpg");
     filter: brightness(100%);
+    transition: filter 0.8s ease;
+  }
+
+  .card2:hover::before {
+    filter: brightness(80%);
   }
 
   .card3::before {
     background-image: url("/images/portfolio/desktop/image-prototype.jpg");
     filter: brightness(90%) saturate(120%);
+    transition: filter 0.8s ease;
+  }
+
+  .card3:hover::before {
+    filter: brightness(70%);
   }
 
   .slideBtns {
@@ -498,18 +542,17 @@ br {
     cursor: pointer;
   }
 
-  .slideBtn:Hover {
+  .slideBtn:hover {
     background: rgb(235, 235, 235);
   }
 
   .active {
-    background: #1B1D23;
+    background: #1b1d23;
     color: white;
   }
 
   .active:hover {
-    background: #1B1D23;
-
+    background: #1b1d23;
   }
 
   .current {

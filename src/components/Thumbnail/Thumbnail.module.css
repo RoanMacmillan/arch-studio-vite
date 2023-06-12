@@ -79,7 +79,7 @@
     transition: filter .3s ease;
   }
 
-  .thumbWrapper img:hover {
+  .thumbWrapper:hover img {
     filter: brightness(60%);
   }
   

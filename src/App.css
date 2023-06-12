@@ -29,8 +29,8 @@ html{
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  min-width: 100vw;
-  overflow-x: hidden;
+  /* min-width: 100vw; */
+  /* overflow-x: hidden; */
 font-family: 'League Spartan', sans-serif;
 
 }
@@ -39,7 +39,7 @@ font-family: 'League Spartan', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   }
 /*
   6. Improve media defaults
@@ -103,7 +103,7 @@ a {
 .hiddenTransform {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(20px);
+  transform: translateY(10px);
 }
 
 .hidden {

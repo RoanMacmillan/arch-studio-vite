@@ -41,9 +41,7 @@
   width: 58px;
 }
 
-.whiteSquare {
-  display: none;
-}
+
 
 @media screen and (min-width: 768px) {
   .iconWrapper {
@@ -79,33 +77,27 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    height: 200px;
+    /* height: 200px; */
   }
+
+  
 
   .iconWrapper {
     margin-top: 0;
-    height: 200px;
-    width: 200px;
+    /* height: 200px;
+    width: 200px; */
   }
 
   .footerNav {
     margin-left: 85px;
   }
 
-  .whiteSquare {
-    width: 126px;
-    background: white;
-    position: absolute;
-    height: 100%;
-    right: 0;
-    display: unset;
-  }
-
+ 
   .footerNav a:hover {
     color: black;
   }
 
   .logof {
-    width: 96.16px !important;
+    /* width: 96.16px !important; */
   }
 }
