@@ -26,7 +26,7 @@
   line-height: 24px;
   color: #ffffff;
   margin-top: 11px;
-  margin-bottom: 83px;
+  margin-bottom: 25px;
 }
 
 .slideContainer img {
@@ -81,8 +81,21 @@
   max-width: 300px;
 }
 
-.paraText {
+.paraText,
+.seraText {
   max-width: 200px;
+}
+
+.seraphImg {
+  filter: brightness(80%);
+}
+
+.federalImg {
+  filter: brightness(60%);
+}
+
+.trinityImg {
+  filter: brightness(40%);
 }
 
 @media screen and (min-width: 668px) {
@@ -109,8 +122,9 @@
     left: 58px;
   }
 
-  .paraText {
-    max-width: unset;
+  .paraText,
+  .seraText {
+    max-width: 300px;
   }
 
   .textOverlay p {
@@ -126,6 +140,11 @@
     letter-spacing: -2px;
     color: #ffffff;
     max-width: 400px;
+  }
+
+  .paraText,
+  .seraText {
+    max-width: unset;
   }
 
   .trinity {

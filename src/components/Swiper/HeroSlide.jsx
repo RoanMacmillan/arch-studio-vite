@@ -5,7 +5,7 @@ import "swiper/swiper-bundle.min.css";
 import styles from "./HeroSlide.module.css";
 import useIntersectionObserver from "../../components/useIntersectionObserver/useIntersectionObserver";
 import { Link } from "react-router-dom";
-import arrow from '../../assets/images/icon-arrow.svg';
+import arrow from "../../assets/images/icon-arrow.svg";
 import img1 from "../../assets/images/1.jpg";
 import img2 from "../../assets/images/2.jpg";
 import img3 from "../../assets/images/3.jpg";
@@ -59,7 +59,6 @@ const HeroSlide = () => {
         }}
         onSwiper={(swiper) => console.log(swiper)}
         className="swiper-container" // Add this line
-        
       >
         <SwiperSlide>
           <div
@@ -96,8 +95,15 @@ const HeroSlide = () => {
                 Project made for an art museum near Southwest London. Project
                 Paramour is a statement of bold, modern architecture.
               </p>
-              <Link to='/portfolio'>
-              <div className={styles.portfolioBtn}>See Our Portfolio<img className={styles.iconArrow} src={arrow} alt={arrow}></img></div>
+              <Link to="/portfolio">
+                <div className={styles.portfolioBtn}>
+                  See Our Portfolio
+                  <img
+                    className={styles.iconArrow}
+                    src={arrow}
+                    alt={arrow}
+                  ></img>
+                </div>
               </Link>
             </div>
           </div>
@@ -105,23 +111,30 @@ const HeroSlide = () => {
         <SwiperSlide>
           <div className={styles.slideContainer}>
             <img
-              className={styles.mobileSlide}
+              className={`${styles.mobileSlide} ${styles.seraphImg}`}
               src={img2mobile}
               alt="Image 2"
             />
             <img
-              className={styles.desktopSlide}
+              className={`${styles.desktopSlide} ${styles.seraphImg}`}
               src={img1}
               alt="Image 2"
             />
             <div className={styles.textOverlay}>
-              <h4>Seraph Station</h4>
+              <h4 className={styles.seraText}>Seraph Station</h4>
               <p>
                 The Seraph Station project challenged us to design a unique
                 station that would transport people through time.
               </p>
-              <Link to='/portfolio'>
-              <div className={styles.portfolioBtn}>See Our Portfolio<img className={styles.iconArrow} src={arrow} alt={arrow}></img></div>
+              <Link to="/portfolio">
+                <div className={styles.portfolioBtn}>
+                  See Our Portfolio
+                  <img
+                    className={styles.iconArrow}
+                    src={arrow}
+                    alt={arrow}
+                  ></img>
+                </div>
               </Link>
             </div>
           </div>
@@ -129,12 +142,12 @@ const HeroSlide = () => {
         <SwiperSlide>
           <div className={styles.slideContainer}>
             <img
-              className={styles.mobileSlide}
+              className={`${styles.mobileSlide} ${styles.federalImg}`}
               src={img3mobile}
               alt="Image 3"
             />
             <img
-              className={styles.desktopSlide}
+              className={`${styles.desktopSlide} ${styles.federalImg}`}
               src={img3}
               alt="Image 3"
             />
@@ -145,8 +158,15 @@ const HeroSlide = () => {
                 1800s. We achieved this with a striking look of brutal
                 minimalism with modern touches.
               </p>
-              <Link to='/portfolio'>
-              <div className={styles.portfolioBtn}>See Our Portfolio<img className={styles.iconArrow} src={arrow} alt={arrow}></img></div>
+              <Link to="/portfolio">
+                <div className={styles.portfolioBtn}>
+                  See Our Portfolio
+                  <img
+                    className={styles.iconArrow}
+                    src={arrow}
+                    alt={arrow}
+                  ></img>
+                </div>
               </Link>
             </div>
           </div>
@@ -154,12 +174,12 @@ const HeroSlide = () => {
         <SwiperSlide>
           <div className={styles.slideContainer}>
             <img
-              className={styles.mobileSlide}
+              className={`${styles.mobileSlide} ${styles.trinityImg}`}
               src={img4mobile}
               alt="Image 4"
             />
             <img
-              className={styles.desktopSlide}
+              className={`${styles.desktopSlide} ${styles.trinityImg}`}
               src={img4}
               alt="Image 4"
             />
@@ -170,8 +190,15 @@ const HeroSlide = () => {
                 building located in the middle of a city with a high earthquake
                 frequency.
               </p>
-              <Link to='/portfolio'>
-              <div className={styles.portfolioBtn}>See Our Portfolio<img className={styles.iconArrow} src={arrow} alt={arrow}></img></div>
+              <Link to="/portfolio">
+                <div className={styles.portfolioBtn}>
+                  See Our Portfolio
+                  <img
+                    className={styles.iconArrow}
+                    src={arrow}
+                    alt={arrow}
+                  ></img>
+                </div>
               </Link>
             </div>
           </div>
