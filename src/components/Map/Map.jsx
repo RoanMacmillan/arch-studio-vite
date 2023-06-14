@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Map.module.css';
 
@@ -15,6 +15,7 @@ function MapComponent({ targetLocation, zoomLevel }) {
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+      {targetLocation && <Marker position={targetLocation} />}
     </MapContainer>
   );
 }
