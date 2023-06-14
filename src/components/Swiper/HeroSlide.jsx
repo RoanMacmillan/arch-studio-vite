@@ -6,6 +6,15 @@ import styles from "./HeroSlide.module.css";
 import useIntersectionObserver from "../../components/useIntersectionObserver/useIntersectionObserver";
 import { Link } from "react-router-dom";
 import arrow from '../../assets/images/icon-arrow.svg';
+import img1 from "../../assets/images/1.jpg";
+import img2 from "../../assets/images/2.jpg";
+import img3 from "../../assets/images/3.jpg";
+import img4 from "../../assets/images/4.jpg";
+
+import img1mobile from "../../assets/images/1mobile.jpg";
+import img2mobile from "../../assets/images/2mobile.jpg";
+import img3mobile from "../../assets/images/3mobile.jpg";
+import img4mobile from "../../assets/images/4mobile.jpg";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -58,7 +67,7 @@ const HeroSlide = () => {
           >
             <img
               className={styles.mobileSlide}
-              src="/src/assets/images/1mobile.jpg"
+              src={img1mobile}
               alt="Image 1"
               style={{
                 filter: `brightness(${brightness})`,
@@ -67,7 +76,7 @@ const HeroSlide = () => {
             />
             <img
               className={styles.desktopSlide}
-              src="/src/assets/images/2.jpg"
+              src={img2}
               alt="Image 1"
               style={{
                 filter: `brightness(${brightness})`,
@@ -97,12 +106,12 @@ const HeroSlide = () => {
           <div className={styles.slideContainer}>
             <img
               className={styles.mobileSlide}
-              src="/src/assets/images/2mobile.jpg"
+              src={img2mobile}
               alt="Image 2"
             />
             <img
               className={styles.desktopSlide}
-              src="/src/assets/images/1.jpg"
+              src={img1}
               alt="Image 2"
             />
             <div className={styles.textOverlay}>
@@ -121,12 +130,12 @@ const HeroSlide = () => {
           <div className={styles.slideContainer}>
             <img
               className={styles.mobileSlide}
-              src="/src/assets/images/3mobile.jpg"
+              src={img3mobile}
               alt="Image 3"
             />
             <img
               className={styles.desktopSlide}
-              src="/src/assets/images/3.jpg"
+              src={img3}
               alt="Image 3"
             />
             <div className={styles.textOverlay}>
@@ -146,12 +155,12 @@ const HeroSlide = () => {
           <div className={styles.slideContainer}>
             <img
               className={styles.mobileSlide}
-              src="/src/assets/images/4mobile.jpg"
+              src={img4mobile}
               alt="Image 4"
             />
             <img
               className={styles.desktopSlide}
-              src="/src/assets/images/4.jpg"
+              src={img4}
               alt="Image 4"
             />
             <div className={styles.textOverlay}>
