@@ -77,6 +77,14 @@
   display: none;
 }
 
+.textOverlay p {
+  max-width: 300px;
+}
+
+.paraText {
+  max-width: 200px;
+}
+
 @media screen and (min-width: 668px) {
   .slideContainer {
     height: 720px;
@@ -100,6 +108,14 @@
     top: 186px;
     left: 58px;
   }
+
+  .paraText {
+    max-width: unset;
+  }
+
+  .textOverlay p {
+    max-width: 400px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -116,9 +132,7 @@
     max-width: 500px !important;
   }
 
-  .textOverlay p {
-    max-width: 400px;
-  }
+  
 }
 
 @media screen and (min-width: 1150px) {

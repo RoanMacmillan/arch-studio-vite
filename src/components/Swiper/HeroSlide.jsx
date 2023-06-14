@@ -58,7 +58,7 @@ const HeroSlide = () => {
           >
             <img
               className={styles.mobileSlide}
-              src="./src/assets/images/1mobile.jpg"
+              src="/src/assets/images/1mobile.jpg"
               alt="Image 1"
               style={{
                 filter: `brightness(${brightness})`,
@@ -67,7 +67,7 @@ const HeroSlide = () => {
             />
             <img
               className={styles.desktopSlide}
-              src="./src/assets/images/2.jpg"
+              src="/src/assets/images/2.jpg"
               alt="Image 1"
               style={{
                 filter: `brightness(${brightness})`,
@@ -82,7 +82,7 @@ const HeroSlide = () => {
                   : "hiddenTransform"
               }`}
             >
-              <h4>Project Paramour</h4>
+              <h4 className={styles.paraText}>Project Paramour</h4>
               <p>
                 Project made for an art museum near Southwest London. Project
                 Paramour is a statement of bold, modern architecture.
@@ -97,12 +97,12 @@ const HeroSlide = () => {
           <div className={styles.slideContainer}>
             <img
               className={styles.mobileSlide}
-              src="./src/assets/images/2mobile.jpg"
+              src="/src/assets/images/2mobile.jpg"
               alt="Image 2"
             />
             <img
               className={styles.desktopSlide}
-              src="./src/assets/images/1.jpg"
+              src="/src/assets/images/1.jpg"
               alt="Image 2"
             />
             <div className={styles.textOverlay}>
@@ -121,12 +121,12 @@ const HeroSlide = () => {
           <div className={styles.slideContainer}>
             <img
               className={styles.mobileSlide}
-              src="./src/assets/images/3mobile.jpg"
+              src="/src/assets/images/3mobile.jpg"
               alt="Image 3"
             />
             <img
               className={styles.desktopSlide}
-              src="./src/assets/images/3.jpg"
+              src="/src/assets/images/3.jpg"
               alt="Image 3"
             />
             <div className={styles.textOverlay}>
@@ -146,12 +146,12 @@ const HeroSlide = () => {
           <div className={styles.slideContainer}>
             <img
               className={styles.mobileSlide}
-              src="./src/assets/images/4mobile.jpg"
+              src="/src/assets/images/4mobile.jpg"
               alt="Image 4"
             />
             <img
               className={styles.desktopSlide}
-              src="./src/assets/images/4.jpg"
+              src="/src/assets/images/4.jpg"
               alt="Image 4"
             />
             <div className={styles.textOverlay}>
