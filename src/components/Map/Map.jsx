@@ -2,7 +2,7 @@ import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Map.module.css';
 
-function MapComponent({ targetLocation }) {
+function MapComponent({ targetLocation, zoomLevel }) {
   const defaultCenter = [37.7749, -122.4194]; // Default position coordinates (San Francisco)
   const center = targetLocation || defaultCenter; // Use targetLocation if provided, otherwise use the default
 
@@ -10,7 +10,7 @@ function MapComponent({ targetLocation }) {
   const mapKey = targetLocation ? targetLocation.join("_") : "default";
 
   return (
-    <MapContainer key={mapKey} center={center} zoom={7} className={styles.mapContainer}>
+    <MapContainer key={mapKey} center={center} zoom={zoomLevel} className={styles.mapContainer}>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
