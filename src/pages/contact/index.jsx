@@ -46,6 +46,8 @@ export default function page() {
             }}
           >
             View on Map
+            <img src={arrow} alt='arrow'></img>
+
           </button>
         </div>
         <div className={styles.detailsChild}>
@@ -62,6 +64,7 @@ export default function page() {
             }}
           >
             View on Map
+            <img src={arrow} alt='arrow'></img>
           </button>
         </div>
       </div>
