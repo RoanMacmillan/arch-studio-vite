@@ -6,6 +6,7 @@ import About from './pages/about/index';
 import Contact from './pages/contact/index';
 import Portfolio from './pages/portfolio/index';
 import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className='app'>
     <Router>
+    <ScrollToTop />
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
