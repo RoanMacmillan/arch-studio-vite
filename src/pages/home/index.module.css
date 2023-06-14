@@ -273,9 +273,9 @@ br {
   }
 
   .aboutWrapper h1 {
-    font-size: 72px;
-    line-height: 64px;
-    letter-spacing: -2px;
+    font-size: 72px !important;
+    line-height: 64px !important;
+    letter-spacing: -2px !important;
   }
 
   .aboutWrapper {
@@ -360,7 +360,7 @@ br {
 
   .aboutWrapper h1 {
     margin-bottom: 23px;
-    max-width: 550px;
+    max-width: 450px;
   }
 }
 

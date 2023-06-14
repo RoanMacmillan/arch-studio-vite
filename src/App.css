@@ -96,27 +96,30 @@ a {
 .fadeInLoad {
   opacity: 1;
   visibility: visible;
-  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  transition: opacity .7s ease-in-out, visibility .7s ease-in-out;
 }
 
 .fadeInLoadTransform {
   opacity: 1;
   visibility: visible;
-  transition: 1s all 1.2s ease;
-  /* transition-delay: 1s; */
   transform: translateY(0);
+  transition: opacity 1s ease 1.2s, transform 1s ease 1.2s, visibility 1s ease 1.2s;
 }
 
 .hiddenTransform {
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
+  transition: opacity 1s ease, transform 1s ease, visibility 1s ease;
 }
+
 
 .hidden {
   opacity: 0;
   visibility: hidden;
 }
+
+
 
 @keyframes fadeIn {
   to {

@@ -4,29 +4,8 @@ import Button from "../../components/button/button";
 import current from "../../assets/images/current.svg";
 import useIntersectionObserver from "../../components/useIntersectionObserver/useIntersectionObserver";
 import { Link } from "react-router-dom";
+import HeroSlide from "../../components/Swiper/HeroSlide";
 
-const slides = [
-  {
-    background: "/images/home/desktop/image-hero-paramour.webp",
-    title: "Project Paramour",
-    text: "Project made for an art museum near Southwest London. Project Paramour is a statement of bold, modern architecture.",
-  },
-  {
-    background: "/images/home/desktop/image-hero-seraph.jpg",
-    title: "Seraph Station",
-    text: "The Seraph Station project challenged us to design a unique station that would transport people through time. The result is a fresh and futuristic model inspired by space stations.",
-  },
-  {
-    background: "/images/home/desktop/image-hero-trinity.jpg",
-    title: "Trinity Bank Tower",
-    text: "Trinity Bank challenged us to make a concept for a 84 story building located in the middle of a city with a high earthquake frequency. For this project we used curves to blend design and stability to meet our objectives.",
-  },
-  {
-    background: "/images/home/desktop/image-hero-federal.jpg",
-    title: "Federal II Tower",
-    text: "A sequel theme project for a tower originally built in the 1800s. We achieved this with a striking look of brutal minimalism with modern touches.",
-  },
-];
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -38,65 +17,16 @@ export default function Home() {
   const [featuredContainerRef, featuredContainerVisible] =
     useIntersectionObserver();
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setBrightness("65%");
-    }, 700); 
-
-    return () => {
-      clearTimeout(timer); // clear timeout if the component is unmounted
-    };
-  }, []);
+ 
 
   return (
     <main>
       <div className="currentContainer">
       <img className="current" src={current} alt="current page"></img>
       </div>
-      <div
-        ref={heroContainerRef}
-        className={`${styles.heroContainer} ${
-          heroContainerVisible ? "fadeInLoad" : "hidden"
-        } `}
-      >
-        
 
-        <div
-          className={styles.background}
-          style={{
-            backgroundImage: `url(${slides[currentSlide].background})`,
-            filter: `brightness(${brightness})`,
-            transition: "filter 1s ease",
-          }}
-        />
-        <div className={styles.heroWrapper}>
-          <div
-            ref={textBtnRef}
-            className={`${styles.textBtn} ${
-              textBtnVisible ? "fadeInLoadTransform" : "hiddenTransform"
-            } `}
-          >
-            <h1>{slides[currentSlide].title}</h1>
-            <p>{slides[currentSlide].text}</p>
-
-            <Button href="/portfolio">See Our Portfolio</Button>
-          </div>
-        </div>
-        <div className={styles.slideBtns}>
-          {slides.map((_, idx) => (
-            <button
-              className={`${styles.slideBtn} ${
-                currentSlide === idx ? styles.active : ""
-              }`}
-              key={idx}
-              onClick={() => setCurrentSlide(idx)}
-            >
-              {(idx + 1).toString().padStart(2, "0")}
-            </button>
-          ))}
-        </div>
-      </div>
-
+      <HeroSlide />
+      
       <div
         ref={textWrapperRef}
         className={`${styles.textWrapper} ${
