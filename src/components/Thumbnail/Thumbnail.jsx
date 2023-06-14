@@ -1,15 +1,13 @@
 import React from 'react'
 import images from '../../../data.json'
 import styles from './Thumbnail.module.css'
-import useIntersectionObserver from '../useIntersectionObserver/useIntersectionObserver'
 
 const Thumbnail = () => {
 
 
-  const [thumbnailContainerRef, thumbnailContainerVisible] = useIntersectionObserver();
 
   return (
-    <div ref={thumbnailContainerRef} className={`${styles.thumbnailContainer} ${thumbnailContainerVisible ? 'fadeInLoad' : 'hidden'}`}>
+    <div className={`${styles.thumbnailContainer}`}>
       {images.map((image) => (
         <div className={styles.thumbWrapper} key={image.name}>
           <img className={styles.mobileImg} src={image.mobile} alt={image.name} />

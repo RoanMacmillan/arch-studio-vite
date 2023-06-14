@@ -38,6 +38,22 @@
   display: none;
 }
 
+.desktopImg,
+.tabletImg,
+.mobileImg {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 
 
 @media screen and (min-width: 668px) {
@@ -94,4 +110,6 @@
     opacity: 0;
     transition: opacity .3s ease;
   }
+
+  
 }
