@@ -41,10 +41,6 @@
   width: 58px;
 }
 
-.whiteSq {
-  display: none;
-}
-
 
 
 @media screen and (min-width: 768px) {
@@ -81,15 +77,15 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    height: 200px;
+    /* height: 200px; */
   }
 
   
 
   .iconWrapper {
     margin-top: 0;
-    height: 200px;
-    width: 200px;
+    /* height: 200px;
+    width: 200px; */
   }
 
   .footerNav {
@@ -102,21 +98,6 @@
   }
 
   .logof {
-    width: 96.16px !important;
-  }
-
-  .whiteSq {
-    display: unset;
-    width: 126px;
-    height: 200px;
-    position: absolute;
-    background: white;
-    right: 0;
-    
-
-  }
-
-  .bWrapper {
-    z-index: 100;
+    /* width: 96.16px !important; */
   }
 }

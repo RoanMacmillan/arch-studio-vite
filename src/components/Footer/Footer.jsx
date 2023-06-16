@@ -20,7 +20,6 @@ export default function Footer() {
           See Our Portfolio
         </Button>
         </div>
-        <div className={styles.whiteSq}></div>
     </footer>
   );
 }
