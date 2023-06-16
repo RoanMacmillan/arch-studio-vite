@@ -93,11 +93,11 @@ a {
   display: none;
 }
 
-.fadeInLoad {
+/* .fadeInLoad {
   opacity: 1;
   visibility: visible;
   transition: opacity .7s ease-in-out, visibility .7s ease-in-out;
-}
+} */
 
 
 
@@ -116,10 +116,10 @@ a {
 }
 
 
-.hidden {
+/* .hidden {
   opacity: 0;
   visibility: hidden;
-}
+} */
 
 
 

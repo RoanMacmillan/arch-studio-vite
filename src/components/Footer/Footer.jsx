@@ -15,10 +15,12 @@ export default function Footer() {
         <Link className={styles.aboutLink} to="/about">About Us</Link>
         <Link to="/contact">Contact</Link>
       </nav>
-
+    <div className={styles.bWrapper}>
         <Button href='/portfolio' width="252px">
           See Our Portfolio
         </Button>
+        </div>
+        <div className={styles.whiteSq}></div>
     </footer>
   );
 }
